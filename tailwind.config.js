@@ -9,6 +9,7 @@ module.exports = {
         secondary: "var(--secondary)",
         "main-text": "var(--text-main)",
         "secondary-text": "var(--text-secondary)",
+        accent: "var(--accent)",
       },
     },
   },

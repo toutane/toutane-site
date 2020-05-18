@@ -1,9 +1,12 @@
-import React from "react";
+import React, { useContext } from "react";
+
+import { ThemeContext } from "../context/themeContext";
 
 import Layout from "../components/layout";
 import SEO from "../components/seo";
 
 function HomePage() {
+  const { theme, setTheme } = useContext(ThemeContext);
   return (
     <Layout>
       <SEO
@@ -12,11 +15,14 @@ function HomePage() {
       />
 
       <section className="text-center">
-        <h2 className="inline-block p-3 mb-4 text-2xl font-bold bg-blue-400 rounded-lg shadow-xl">
-          <span className="text-white">
-            Hey there! This is a Gatsby + Tailwindcss Website
-          </span>
-        </h2>
+        <button
+          className={`theme-${theme} bg-accent hover:bg-accent text-white font-bold py-2 px-4 rounded`}
+          onClick={() =>
+            setTheme((prvState) => (prvState === "light" ? "dark" : "light"))
+          }
+        >
+          Switch theme
+        </button>
       </section>
     </Layout>
   );

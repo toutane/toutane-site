@@ -1,7 +1,8 @@
 import { graphql, useStaticQuery, Link } from "gatsby";
 import React, { useState } from "react";
+import PropTypes from "prop-types";
 
-function Header() {
+function Header(props) {
   const [isExpanded, toggleExpansion] = useState(false);
   const { site } = useStaticQuery(graphql`
     query SiteTitleQuery {
@@ -62,7 +63,7 @@ function Header() {
             },
           ].map((link) => (
             <Link
-              className="block mt-4 text-gray-400 hover:text-gray-800 no-underline md:inline-block md:mt-0 md:ml-6"
+              className={`theme-${props.theme} block mt-4 text-secondary-text hover:text-main-text no-underline md:inline-block md:mt-0 md:ml-6`}
               key={link.title}
               to={link.route}
             >
@@ -74,5 +75,9 @@ function Header() {
     </header>
   );
 }
+
+Header.propTypes = {
+  theme: PropTypes.node.isRequired,
+};
 
 export default Header;
