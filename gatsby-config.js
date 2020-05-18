@@ -24,6 +24,8 @@ module.exports = {
         icon: `src/images/tailwind-icon.png`,
       },
     },
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-plugin-postcss`,
       options: {

@@ -8,8 +8,10 @@
     "gatsby-plugin-manifest": "2.4.3",
     "gatsby-plugin-offline": "3.2.2",
     "gatsby-plugin-postcss": "2.3.1",
+    "gatsby-plugin-preload-fonts": "^1.2.3",
     "gatsby-plugin-react-helmet": "3.3.1",
     "gatsby-plugin-sharp": "2.6.3",
+    "gatsby-transformer-sharp": "^2.5.2",
     "prop-types": "15.7.2",
     "react": "16.13.1",
     "react-dom": "16.13.1",
@@ -35,7 +37,8 @@
     "start": "npm run develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
+    "preload-fonts": "gatsby-preload-fonts"
   },
   "devDependencies": {
     "@tailwindcss/custom-forms": "0.2.1",
