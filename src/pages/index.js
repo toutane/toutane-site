@@ -14,7 +14,7 @@ function HomePage() {
       <section className="text-center">
         <h2 className="inline-block p-3 mb-4 text-2xl font-bold bg-blue-400 rounded-lg shadow-xl">
           <span className="text-white">
-            Hey there! This is a Gatsby + Tailwindcss Website.
+            Hey there! This is a Gatsby + Tailwindcss Website
           </span>
         </h2>
       </section>

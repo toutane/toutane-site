@@ -53,12 +53,16 @@ function Header() {
               title: `Projects`,
             },
             {
+              route: `/blog`,
+              title: `Blog`,
+            },
+            {
               route: `/contact`,
               title: `Contact`,
             },
           ].map((link) => (
             <Link
-              className="block mt-4 text-blue-700 no-underline md:inline-block md:mt-0 md:ml-6"
+              className="block mt-4 text-gray-400 hover:text-gray-800 no-underline md:inline-block md:mt-0 md:ml-6"
               key={link.title}
               to={link.route}
             >
