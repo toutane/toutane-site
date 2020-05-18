@@ -4,12 +4,12 @@ import Layout from "../components/layout";
 import SEO from "../components/seo";
 import dogIllustration from "../images/dog-illustration.svg";
 
-function AboutPage() {
+function ProjectsPage() {
   return (
     <Layout>
       <SEO
         keywords={[`gatsby`, `tailwind`, `react`, `tailwindcss`]}
-        title="About"
+        title="Projects"
       />
 
       <section className="flex flex-col items-center md:flex-row">
@@ -35,4 +35,4 @@ function AboutPage() {
   );
 }
 
-export default AboutPage;
+export default ProjectsPage;

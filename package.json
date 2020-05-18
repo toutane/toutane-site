@@ -1,8 +1,8 @@
 {
-  "name": "gatsby-starter-tailwind",
-  "description": "Gatsby starter styled with Tailwind",
+  "name": "toutane-site",
+  "description": "Web Site of Charles-Antoine LEGER aka toutane",
   "version": "4.0.0",
-  "author": "Taylor Bryant <taylor@bryant.io>",
+  "author": "Charles-Antoine LEGER",
   "dependencies": {
     "gatsby": "2.21.32",
     "gatsby-plugin-manifest": "2.4.3",
@@ -52,9 +52,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/taylorbryant/gatsby-starter-tailwind"
+    "url": "https://github.com/toutane/toutane-site"
   },
   "bugs": {
-    "url": "https://github.com/taylorbryant/gatsby-starter-tailwind/issues"
+    "url": ""
   }
 }
