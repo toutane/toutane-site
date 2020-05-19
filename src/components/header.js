@@ -2,6 +2,10 @@ import { graphql, useStaticQuery, Link } from "gatsby";
 import React, { useState } from "react";
 import PropTypes from "prop-types";
 
+if (typeof window !== "undefined") {
+  // eslint-disable-next-line global-require
+  require("smooth-scroll")('a[href*="#"]');
+}
 function Header(props) {
   const [isExpanded, toggleExpansion] = useState(false);
   const { site } = useStaticQuery(graphql`
@@ -18,8 +22,8 @@ function Header(props) {
     <header>
       <div className="flex flex-wrap items-center justify-between max-w-4xl p-4 mx-auto md:p-8">
         <Link to="/">
-          <h1 className="flex items-center text-blue-700 ">
-            <span className="text-2xl font-black tracking-tight">
+          <h1 className="flex items-center text-main-text ">
+            <span className="text-base font-medium tracking-tight">
               {site.siteMetadata.title}
             </span>
           </h1>
@@ -50,7 +54,7 @@ function Header(props) {
               title: `Home`,
             },
             {
-              route: `/projects`,
+              route: `#projects`,
               title: `Projects`,
             },
             {
@@ -63,7 +67,11 @@ function Header(props) {
             },
           ].map((link) => (
             <Link
-              className={`theme-${props.theme} block mt-4 text-third-text hover:text-main-text no-underline md:inline-block md:mt-0 md:ml-6`}
+              className={`theme-${
+                props.theme
+              } block mt-4 text-sm font-light text-${
+                props.theme === "light" ? "fifth" : "fourth"
+              } hover:text-green-400 no-underline md:inline-block md:mt-0 md:ml-6 text-base	`}
               key={link.title}
               to={link.route}
             >

@@ -25,7 +25,9 @@ function HomePage() {
           Switch theme
         </button>
       </HomeContainer>
-      <ContactContainer theme={theme} />
+      <ContactContainer theme={theme}>
+        <span id="projects">My Projects</span>
+      </ContactContainer>
     </Layout>
   );
 }

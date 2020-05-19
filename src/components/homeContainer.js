@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 export const HomeContainer = ({ children, theme }) => {
   return (
     <div
-      className={`theme-${theme} bg-primary w-screen h-64 flex justify-center items-center`}
+      className={`theme-${theme} bg-primary w-screen h-64 flex justify-center items-center `}
     >
       {children}
     </div>

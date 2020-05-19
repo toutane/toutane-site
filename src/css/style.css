@@ -2,11 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
+.scroll-container {
+  scroll-behavior: smooth;
+}
+
 .theme-light {
   --black: #000000;
   --white: #ffffff;
   --primary: #ffffff;
   --secondary: #f7fafc;
+  --third: #edf2f7;
+  --fourth: #e2e8f0;
+  --fifth: #cbd5e0;
   --text-main: #000000;
   --text-secondary: #1a202c;
   --text-third: #2d3748;
@@ -18,7 +25,10 @@
   --black: #000000;
   --white: #ffffff;
   --primary: #000000;
-  --secondary: #131416;
+  --secondary: #090b0c;
+  --third: #1a202c;
+  --fourth: #2d3748;
+  --fifth: #4a5568;
   --text-main: #ffffff;
   --text-secondary: #f7fafc;
   --text-third: #edf2f7;

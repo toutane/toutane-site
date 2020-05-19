@@ -5,6 +5,11 @@ import { ThemeContext } from "../context/themeContext";
 
 import Header from "./header";
 
+if (typeof window !== "undefined") {
+  // eslint-disable-next-line global-require
+  require("smooth-scroll")('a[href*="#"]');
+}
+
 function Layout({ children }) {
   const { theme } = useContext(ThemeContext);
   return (
