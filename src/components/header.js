@@ -63,7 +63,7 @@ function Header(props) {
             },
           ].map((link) => (
             <Link
-              className={`theme-${props.theme} block mt-4 text-secondary-text hover:text-main-text no-underline md:inline-block md:mt-0 md:ml-6`}
+              className={`theme-${props.theme} block mt-4 text-third-text hover:text-main-text no-underline md:inline-block md:mt-0 md:ml-6`}
               key={link.title}
               to={link.route}
             >
