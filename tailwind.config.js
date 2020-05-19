@@ -5,11 +5,17 @@ module.exports = {
   theme: {
     extend: {
       colors: {
+        transparent: "transparent",
+        white: "var(--white)",
+        black: "var(--black)",
         primary: "var(--primary)",
         secondary: "var(--secondary)",
         "main-text": "var(--text-main)",
         "secondary-text": "var(--text-secondary)",
-        accent: "var(--accent)",
+        "third-text": "var(--text-third)",
+        "green-400": "var(--green-400)",
+        "green-500": "var(--green-500)",
+        "green-900": "var(--green-900)",
       },
     },
   },
